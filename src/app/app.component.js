@@ -1,7 +1,7 @@
 function AppController() {
   const ctrl = this;
   ctrl.people = [];
-  ctrl.onSubmit = (person) => {
+  ctrl.onSubmit = ({ person }) => {
     ctrl.people.push(person);
   };
 }

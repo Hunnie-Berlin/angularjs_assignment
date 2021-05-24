@@ -3,5 +3,5 @@
     {{ $ctrl.people | json }}
 </pre>
 <input-component on-submit="$ctrl.onSubmit({person})"></input-component>
-<display-component></display-component>
+<display-component people="$ctrl.people"></display-component>
 <filter-component></filter-component>

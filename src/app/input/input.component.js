@@ -2,14 +2,15 @@ function InputController($scope) {
   const ctrl = this;
 
   ctrl.submit = function () {
-    console.log("submitted");
-    const person = {
-      name: $scope.name,
-      gender: $scope.gender,
-      createdAt: Date.now(),
-    };
-    ctrl.onSubmit({ person });
-    $scope.name = "";
+    if ($scope.name && $scope.gender) {
+      const person = {
+        name: $scope.name,
+        gender: $scope.gender,
+        createdAt: Date.now(),
+      };
+      ctrl.onSubmit({ person });
+      $scope.name = "";
+    }
   };
 }
 
