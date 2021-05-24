@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="main">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="../node_modules/angular/angular.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.component.js"></script>
+    <script src="app/input/input.component.js"></script>
+    <script src="app/display/display.component.js"></script>
+    <script src="app/filter/filter.component.js"></script>
   </head>
   <body>
-    TEST: 1 + 2 = {{1+2}}
+    <app-root></app-root>
   </body>
 </html>
