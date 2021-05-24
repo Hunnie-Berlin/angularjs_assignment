@@ -1,5 +1,7 @@
 <h1>App Root</h1>
-
-<input-component></input-component>
+<pre ng-show="$ctrl.people.length !== 0">
+    {{ $ctrl.people | json }}
+</pre>
+<input-component on-submit="$ctrl.onSubmit({person})"></input-component>
 <display-component></display-component>
 <filter-component></filter-component>
