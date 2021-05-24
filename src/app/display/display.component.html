@@ -1,8 +1,10 @@
 <h2>Display Component</h2>
-<div ng-repeat="person in $ctrl.filtered">
-  <div>{{ person.name.charAt(0).toUpperCase() + person.name.slice(1) }}</div>
-  <div>
-    {{ person.gender.toUpperCase() }}
+<div class="border display">
+  <div ng-repeat="person in $ctrl.filtered" class="card">
+    <div>{{ person.name.charAt(0).toUpperCase() + person.name.slice(1) }}</div>
+    <div>
+      {{ person.gender.toUpperCase() }}
+    </div>
+    <div>Registered at: {{ person.createdAt | date: "dd/MM/yyyy" }}</div>
   </div>
-  <div>Registered at:{{ person.createdAt | date: "dd/MM/yyyy" }}</div>
 </div>

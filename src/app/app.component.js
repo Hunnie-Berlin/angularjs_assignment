@@ -19,6 +19,7 @@ function AppController() {
   ];
   ctrl.onSubmit = ({ person }) => {
     ctrl.people.push(person);
+    ctrl.filtered = ctrl.people;
   };
   ctrl.$onInit = function () {
     ctrl.filtered = ctrl.people;

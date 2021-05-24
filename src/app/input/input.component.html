@@ -1,43 +1,41 @@
 <h2>Input Component</h2>
-<form ng-submit="$ctrl.submit()">
-  <input
-    type="text"
-    ng-model="name"
-    placeholder="Please enter your name"
-    required
-  />
-  <div>
+<div class="border">
+  <form ng-submit="$ctrl.submit()">
     <input
-      type="radio"
-      ng-model="gender"
-      name="gender"
-      id="male"
-      value="male"
-      checked
+      type="text"
+      ng-model="name"
+      placeholder="Please enter your name"
+      required
     />
-    <label for="male">Male</label>
+    <div>
+      <input
+        type="radio"
+        ng-model="gender"
+        name="gender"
+        id="male"
+        value="male"
+        checked
+      />
+      <label for="male">Male</label>
 
-    <input
-      type="radio"
-      ng-model="gender"
-      name="gender"
-      id="female"
-      value="female"
-    />
-    <label for="female">Female</label>
+      <input
+        type="radio"
+        ng-model="gender"
+        name="gender"
+        id="female"
+        value="female"
+      />
+      <label for="female">Female</label>
 
-    <input
-      type="radio"
-      ng-model="gender"
-      name="gender"
-      id="non_binary"
-      value="non_binary"
-    />
-    <label for="non_binary">Non Binary</label>
-  </div>
-  <button type="submit">Submit</button>
-</form>
-<div ng-show="name && gender">
-  Display in Input Component: {{ name.toUpperCase() }} /
-  {{ gender.toUpperCase() }}
+      <input
+        type="radio"
+        ng-model="gender"
+        name="gender"
+        id="non_binary"
+        value="non_binary"
+      />
+      <label for="non_binary">Non Binary</label>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 </div>

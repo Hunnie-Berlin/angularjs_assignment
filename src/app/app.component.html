@@ -1,7 +1,9 @@
 <h1>App Root</h1>
-<input-component on-submit="$ctrl.onSubmit({person})"></input-component>
-<display-component
-  people="$ctrl.people"
-  filtered="$ctrl.filtered"
-></display-component>
-<filter-component on-filter="$ctrl.onFilter({condition})"></filter-component>
+<div class="border">
+  <input-component on-submit="$ctrl.onSubmit({person})"></input-component>
+  <filter-component on-filter="$ctrl.onFilter({condition})"></filter-component>
+  <display-component
+    people="$ctrl.people"
+    filtered="$ctrl.filtered"
+  ></display-component>
+</div>
