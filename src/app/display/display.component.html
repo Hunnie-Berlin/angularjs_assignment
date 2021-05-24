@@ -1,8 +1,5 @@
 <h2>Display Component</h2>
-<!-- <pre>
-    {{ $ctrl.people | json }}
-</pre> -->
-<div ng-repeat="person in $ctrl.people">
+<div ng-repeat="person in $ctrl.filtered">
   <div>{{ person.name.charAt(0).toUpperCase() + person.name.slice(1) }}</div>
   <div>
     {{ person.gender.toUpperCase() }}

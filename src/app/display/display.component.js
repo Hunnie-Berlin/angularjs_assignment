@@ -7,5 +7,6 @@ angular.module("main").component("displayComponent", {
   controller: DisplayController,
   bindings: {
     people: "<",
+    filtered: "<",
   },
 });
